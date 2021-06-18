@@ -99,6 +99,7 @@ namespace Ayakkabi_Otomasyon
             txtAdet.Text = "";
             txtFiyat.Text = "";
             dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
             txtTc.Text = "";
             txtAd.Text = "";
             txtTelefon.Text = "";

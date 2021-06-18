@@ -64,6 +64,7 @@ namespace Ayakkabi_Otomasyon
         void ClearTextBoxes()
         {
             dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
             pictureBox1.ImageLocation = null;
             cmbasorti.Text = "";
             txturunkod.Text = "";

@@ -56,6 +56,7 @@ namespace Ayakkabi_Otomasyon
             txtAdet.Text = "";
             txtDesi.Text = "";
             this.dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
         }
         void eklebutonu()
         {
@@ -215,7 +216,7 @@ namespace Ayakkabi_Otomasyon
                 try
                 {
                     con.Open();
-                    OleDbCommand cmd = new OleDbCommand("DELETE FROM Model WHERE ID=?", con);
+                    OleDbCommand cmd = new OleDbCommand("DELETE FROM Urun_Stok WHERE ID=?", con);
                     cmd.Parameters.Add("DELETE", OleDbType.Integer).Value = dataGridView1.CurrentRow.Cells[0].Value;
                     cmd.ExecuteNonQuery();
 

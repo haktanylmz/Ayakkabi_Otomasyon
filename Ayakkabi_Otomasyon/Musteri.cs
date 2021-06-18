@@ -36,6 +36,7 @@ namespace Ayakkabi_Otomasyon
         void ClearTextBoxes()
         {
             dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
             txtTc.Text = "";
             txtAd.Text = "";
             txtSoyad.Text = "";

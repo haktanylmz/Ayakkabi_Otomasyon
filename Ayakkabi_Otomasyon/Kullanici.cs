@@ -54,6 +54,7 @@ namespace Ayakkabi_Otomasyon
             txtsifre.Text="";
             txtsifre1.Text = "";
             dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
         }
         void eklebutonu()
         {

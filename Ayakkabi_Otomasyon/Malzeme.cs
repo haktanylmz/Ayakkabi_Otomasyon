@@ -65,6 +65,7 @@ namespace Ayakkabi_Otomasyon
             txttaban.Text = "";
             txtrenk.Text = "";
             dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
         }
         void eklebutonu()
         {
