@@ -104,14 +104,13 @@ namespace Ayakkabi_Otomasyon
                 {
                     try
                     {
-                        string queryadd = "INSERT INTO Urun_Stok(Malzeme_Tipi,Malzeme_Ad,Adet,Desi)VALUES(@Malzeme_Tipi,@Malzeme_Ad,@Adet,@Desi)";
+                        string queryadd = "INSERT INTO Urun_Stok(Malzeme_Tipi,Malzeme_Ad,Adet)VALUES(@Malzeme_Tipi,@Malzeme_Ad,@Adet)";
 
                         OleDbCommand cmd = new OleDbCommand(queryadd, con);
                         con.Open();
                         cmd.Parameters.AddWithValue("@Malzeme_Tipi", cmbTip.Text);
                         cmd.Parameters.AddWithValue("@Malzeme_Ad", txtAd.Text);
                         cmd.Parameters.AddWithValue("@Adet", txtAdet.Text);
-                        cmd.Parameters.AddWithValue("@Desi", txtDesi.Text);
 
                         cmd.ExecuteNonQuery();
                         con.Close();
