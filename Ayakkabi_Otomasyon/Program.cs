@@ -18,7 +18,7 @@ namespace Ayakkabi_Otomasyon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Stok());
+            Application.Run(new Giris());
         }
     }
 }

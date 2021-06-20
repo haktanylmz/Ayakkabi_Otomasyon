@@ -58,6 +58,7 @@ namespace Ayakkabi_Otomasyon
             dataGridView1.DataSource = ds.Tables["Model"];
             this.dataGridView1.Columns["ID"].Visible = false;
             this.dataGridView1.Columns["Fotograf"].Visible = false;
+            //OleDbCommand cmd = new OleDbCommand("Select * from Where Yetki")
             dataGridView1.Refresh();
             con.Close();
         }
