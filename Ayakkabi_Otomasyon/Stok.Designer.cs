@@ -246,6 +246,7 @@ namespace Ayakkabi_Otomasyon
             this.cmbTip.TabIndex = 45;
             this.cmbTip.DropDown += new System.EventHandler(this.cmbTip_DropDown);
             this.cmbTip.SelectedIndexChanged += new System.EventHandler(this.cmbTip_SelectedIndexChanged);
+            this.cmbTip.TextChanged += new System.EventHandler(this.cmbTip_TextChanged);
             this.cmbTip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbTip_KeyPress);
             // 
             // Stok

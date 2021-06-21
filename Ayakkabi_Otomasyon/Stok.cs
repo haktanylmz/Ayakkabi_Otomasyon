@@ -315,5 +315,25 @@ namespace Ayakkabi_Otomasyon
                 e.Handled = false;
             }
         }
+
+        private void cmbTip_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbTip.Text == "Deri")
+            {
+                txtDesi.Visible = true;
+                lblDesi.Visible = true;
+            }
+            else
+            {
+                txtDesi.Visible = false;
+                lblDesi.Visible = false;
+            }
+            if (cmbTip.Text == "")
+            {
+                txtDesi.Visible = false;
+                lblDesi.Visible = false;
+                txtDesi.Text = "";
+            }
+        }
     }
 }
