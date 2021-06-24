@@ -56,6 +56,10 @@
             this.btnekle = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblkullanici = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblsaat = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -311,11 +315,48 @@
             this.lblkullanici.TabIndex = 26;
             this.lblkullanici.Text = "label1";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(685, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "Saat:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lblsaat
+            // 
+            this.lblsaat.AutoSize = true;
+            this.lblsaat.Location = new System.Drawing.Point(721, 18);
+            this.lblsaat.Name = "lblsaat";
+            this.lblsaat.Size = new System.Drawing.Size(37, 13);
+            this.lblsaat.TabIndex = 65;
+            this.lblsaat.Text = "lblsaat";
+            this.lblsaat.Click += new System.EventHandler(this.lblsaat_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(479, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 29);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "Müşteri";
+            // 
             // Musteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 511);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblsaat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblkullanici);
             this.Controls.Add(this.btngeri);
@@ -382,5 +423,9 @@
         private System.Windows.Forms.Button btngeri;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblkullanici;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblsaat;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label3;
     }
 }

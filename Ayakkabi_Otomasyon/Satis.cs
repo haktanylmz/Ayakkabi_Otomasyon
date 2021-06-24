@@ -54,6 +54,7 @@ namespace Ayakkabi_Otomasyon
             hesapla();
             tcgetir();
             urunkodgetir();
+            timer1.Start();
         }
         void tcgetir()
         {
@@ -309,11 +310,21 @@ namespace Ayakkabi_Otomasyon
         }
         void hesapla()
         {
+           
             try
             {
                 con.Open();
-                OleDbCommand cmd = new OleDbCommand("select sum(Toplam_Fiyat)from Sepet",con);
-                txtGenelToplam.Text = cmd.ExecuteScalar()+" ₺";
+                double sayi = 0;
+                if (sayi == 0)
+                {
+                    
+                    OleDbCommand cmd = new OleDbCommand("select sum(Kdv_Toplam_Fiyat)from Sepet", con);
+                    sayi = Convert.ToDouble(cmd.ExecuteScalar());
+                    sayi = Math.Round(sayi, 3);
+                    txtGenelToplam.Text = Convert.ToString(sayi) + " ₺";
+                }
+                
+
                 con.Close();
             }
             catch (Exception ex)
@@ -364,11 +375,6 @@ namespace Ayakkabi_Otomasyon
                     cmd.Parameters.AddWithValue("@Ekliyen_Kisi", lblkullanici.Text);
 
                     cmd.ExecuteNonQuery();
-                    //string query = "UPDATE Model SET Urun_sayisi=Urun_sayisi-@Adet WHERE Urun_Kod='" + txtUrunKod.Text + "'";
-                    //OleDbCommand cmd1 = new OleDbCommand(query, con);
-                    //cmd1.Parameters.AddWithValue("@Adet", dataGridView1.Rows[i].Cells["Adet"].Value.ToString());
-                    //cmd1.ExecuteNonQuery();
-                    //con.Close();
                     OleDbCommand cmd1 = new OleDbCommand("UPDATE Model SET Urun_sayisi=Urun_sayisi-'" + int.Parse(dataGridView1.Rows[i].Cells["Adet"].Value.ToString()) + "' WHERE Urun_Kod='" + dataGridView1.Rows[i].Cells["Urun_Kod"].Value.ToString() + "'", con);
                     cmd1.ExecuteNonQuery();
                     con.Close();
@@ -662,6 +668,21 @@ namespace Ayakkabi_Otomasyon
                 txtOzeloran.Visible = false;
                 txtOzeloran.Text = "";
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblsaat.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void lblsaat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

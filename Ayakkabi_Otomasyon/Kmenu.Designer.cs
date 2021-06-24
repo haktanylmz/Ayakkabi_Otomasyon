@@ -58,6 +58,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblsaat = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,6 +122,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ImageList = this.ımageList1;
             this.button4.Location = new System.Drawing.Point(601, 261);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 82);
@@ -131,6 +133,8 @@
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ImageIndex = 2;
+            this.button5.ImageList = this.ımageList1;
             this.button5.Location = new System.Drawing.Point(601, 72);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 82);
@@ -142,6 +146,8 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ImageIndex = 5;
+            this.button6.ImageList = this.ımageList1;
             this.button6.Location = new System.Drawing.Point(341, 261);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 82);
@@ -153,6 +159,8 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ImageIndex = 3;
+            this.button3.ImageList = this.ımageList1;
             this.button3.Location = new System.Drawing.Point(81, 261);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 82);
@@ -164,6 +172,8 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ImageIndex = 0;
+            this.button2.ImageList = this.ımageList1;
             this.button2.Location = new System.Drawing.Point(81, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 82);
@@ -175,6 +185,8 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ImageIndex = 1;
+            this.button1.ImageList = this.ımageList1;
             this.button1.Location = new System.Drawing.Point(341, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 82);
@@ -311,6 +323,17 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "modeller.png");
+            this.ımageList1.Images.SetKeyName(1, "malzeme.png");
+            this.ımageList1.Images.SetKeyName(2, "stok.png");
+            this.ımageList1.Images.SetKeyName(3, "satis.png");
+            this.ımageList1.Images.SetKeyName(4, "kullanici.png");
+            this.ımageList1.Images.SetKeyName(5, "müsteri.png");
+            // 
             // Kmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,5 +399,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblsaat;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ImageList ımageList1;
     }
 }

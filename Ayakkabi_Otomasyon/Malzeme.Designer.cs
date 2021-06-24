@@ -56,6 +56,9 @@
             this.btnresimkapat = new System.Windows.Forms.Button();
             this.btnresimekle = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblsaat = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -318,11 +321,37 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(685, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "Saat:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lblsaat
+            // 
+            this.lblsaat.AutoSize = true;
+            this.lblsaat.Location = new System.Drawing.Point(721, 18);
+            this.lblsaat.Name = "lblsaat";
+            this.lblsaat.Size = new System.Drawing.Size(37, 13);
+            this.lblsaat.TabIndex = 65;
+            this.lblsaat.Text = "lblsaat";
+            this.lblsaat.Click += new System.EventHandler(this.lblsaat_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Malzeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 511);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblsaat);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblkullanici);
@@ -389,5 +418,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblkullanici;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblsaat;
+        private System.Windows.Forms.Timer timer1;
     }
 }

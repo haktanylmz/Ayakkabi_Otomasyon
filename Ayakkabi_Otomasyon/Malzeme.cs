@@ -27,6 +27,7 @@ namespace Ayakkabi_Otomasyon
             LoadGridView();
             lblkullanici.Text = "";
             lblkullanici.Text = Giris.username;
+            timer1.Start();
         }
         void resimekle()
         {
@@ -242,5 +243,19 @@ namespace Ayakkabi_Otomasyon
             Application.Exit();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblsaat.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblsaat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

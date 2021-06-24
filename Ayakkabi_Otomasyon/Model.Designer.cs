@@ -55,6 +55,9 @@
             this.lblFiyat = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblsaat = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -304,11 +307,35 @@
             this.lblID.Text = "ID :";
             this.lblID.Visible = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(685, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "Saat:";
+            // 
+            // lblsaat
+            // 
+            this.lblsaat.AutoSize = true;
+            this.lblsaat.Location = new System.Drawing.Point(721, 18);
+            this.lblsaat.Name = "lblsaat";
+            this.lblsaat.Size = new System.Drawing.Size(37, 13);
+            this.lblsaat.TabIndex = 65;
+            this.lblsaat.Text = "lblsaat";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Model
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 511);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblsaat);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.lblFiyat);
@@ -372,5 +399,8 @@
         private System.Windows.Forms.Label lblFiyat;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblsaat;
+        private System.Windows.Forms.Timer timer1;
     }
 }
