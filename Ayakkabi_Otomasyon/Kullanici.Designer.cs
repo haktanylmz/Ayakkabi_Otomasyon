@@ -55,6 +55,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblsaat = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.cmbYetki = new System.Windows.Forms.ComboBox();
+            this.lblYetki = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,7 +124,7 @@
             // 
             // txtad
             // 
-            this.txtad.Location = new System.Drawing.Point(94, 105);
+            this.txtad.Location = new System.Drawing.Point(99, 97);
             this.txtad.Name = "txtad";
             this.txtad.Size = new System.Drawing.Size(100, 20);
             this.txtad.TabIndex = 0;
@@ -130,7 +132,7 @@
             // lblad
             // 
             this.lblad.AutoSize = true;
-            this.lblad.Location = new System.Drawing.Point(62, 108);
+            this.lblad.Location = new System.Drawing.Point(56, 100);
             this.lblad.Name = "lblad";
             this.lblad.Size = new System.Drawing.Size(26, 13);
             this.lblad.TabIndex = 21;
@@ -138,7 +140,7 @@
             // 
             // txtsoyad
             // 
-            this.txtsoyad.Location = new System.Drawing.Point(94, 157);
+            this.txtsoyad.Location = new System.Drawing.Point(99, 148);
             this.txtsoyad.Name = "txtsoyad";
             this.txtsoyad.Size = new System.Drawing.Size(100, 20);
             this.txtsoyad.TabIndex = 1;
@@ -146,7 +148,7 @@
             // lblsoyad
             // 
             this.lblsoyad.AutoSize = true;
-            this.lblsoyad.Location = new System.Drawing.Point(45, 160);
+            this.lblsoyad.Location = new System.Drawing.Point(39, 151);
             this.lblsoyad.Name = "lblsoyad";
             this.lblsoyad.Size = new System.Drawing.Size(43, 13);
             this.lblsoyad.TabIndex = 21;
@@ -154,7 +156,7 @@
             // 
             // txtkullaniciad
             // 
-            this.txtkullaniciad.Location = new System.Drawing.Point(94, 209);
+            this.txtkullaniciad.Location = new System.Drawing.Point(99, 199);
             this.txtkullaniciad.Name = "txtkullaniciad";
             this.txtkullaniciad.Size = new System.Drawing.Size(100, 20);
             this.txtkullaniciad.TabIndex = 2;
@@ -162,7 +164,7 @@
             // lblkullaniciad
             // 
             this.lblkullaniciad.AutoSize = true;
-            this.lblkullaniciad.Location = new System.Drawing.Point(18, 212);
+            this.lblkullaniciad.Location = new System.Drawing.Point(12, 202);
             this.lblkullaniciad.Name = "lblkullaniciad";
             this.lblkullaniciad.Size = new System.Drawing.Size(70, 13);
             this.lblkullaniciad.TabIndex = 21;
@@ -170,7 +172,7 @@
             // 
             // txtsifre
             // 
-            this.txtsifre.Location = new System.Drawing.Point(94, 261);
+            this.txtsifre.Location = new System.Drawing.Point(99, 302);
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.PasswordChar = '*';
             this.txtsifre.Size = new System.Drawing.Size(100, 20);
@@ -179,7 +181,7 @@
             // lblsifre
             // 
             this.lblsifre.AutoSize = true;
-            this.lblsifre.Location = new System.Drawing.Point(54, 264);
+            this.lblsifre.Location = new System.Drawing.Point(48, 305);
             this.lblsifre.Name = "lblsifre";
             this.lblsifre.Size = new System.Drawing.Size(34, 13);
             this.lblsifre.TabIndex = 21;
@@ -189,7 +191,7 @@
             // 
             this.txtsifre1.BackColor = System.Drawing.SystemColors.Window;
             this.txtsifre1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtsifre1.Location = new System.Drawing.Point(94, 313);
+            this.txtsifre1.Location = new System.Drawing.Point(99, 353);
             this.txtsifre1.Name = "txtsifre1";
             this.txtsifre1.PasswordChar = '*';
             this.txtsifre1.Size = new System.Drawing.Size(100, 20);
@@ -198,7 +200,7 @@
             // lblsifre2
             // 
             this.lblsifre2.AutoSize = true;
-            this.lblsifre2.Location = new System.Drawing.Point(20, 316);
+            this.lblsifre2.Location = new System.Drawing.Point(14, 356);
             this.lblsifre2.Name = "lblsifre2";
             this.lblsifre2.Size = new System.Drawing.Size(68, 13);
             this.lblsifre2.TabIndex = 21;
@@ -206,7 +208,7 @@
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(94, 46);
+            this.txtid.Location = new System.Drawing.Point(99, 46);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(100, 20);
             this.txtid.TabIndex = 0;
@@ -215,7 +217,7 @@
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(67, 49);
+            this.lblid.Location = new System.Drawing.Point(61, 49);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(21, 13);
             this.lblid.TabIndex = 21;
@@ -300,11 +302,34 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // cmbYetki
+            // 
+            this.cmbYetki.FormattingEnabled = true;
+            this.cmbYetki.Items.AddRange(new object[] {
+            "Admin",
+            "Kullanıcı"});
+            this.cmbYetki.Location = new System.Drawing.Point(99, 250);
+            this.cmbYetki.Name = "cmbYetki";
+            this.cmbYetki.Size = new System.Drawing.Size(100, 21);
+            this.cmbYetki.TabIndex = 67;
+            this.cmbYetki.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbYetki_KeyPress);
+            // 
+            // lblYetki
+            // 
+            this.lblYetki.AutoSize = true;
+            this.lblYetki.Location = new System.Drawing.Point(45, 253);
+            this.lblYetki.Name = "lblYetki";
+            this.lblYetki.Size = new System.Drawing.Size(37, 13);
+            this.lblYetki.TabIndex = 68;
+            this.lblYetki.Text = "Yetki :";
+            // 
             // Kullanici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 511);
+            this.Controls.Add(this.lblYetki);
+            this.Controls.Add(this.cmbYetki);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblsaat);
             this.Controls.Add(this.label2);
@@ -368,5 +393,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblsaat;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox cmbYetki;
+        private System.Windows.Forms.Label lblYetki;
     }
 }

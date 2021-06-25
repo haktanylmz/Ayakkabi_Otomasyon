@@ -54,6 +54,9 @@ namespace Ayakkabi_Otomasyon
             txtkullaniciad.Text = "";
             txtsifre.Text="";
             txtsifre1.Text = "";
+            cmbYetki.Text = "";
+            cmbYetki.SelectedIndex = -1;
+            cmbYetki.SelectedItem = -1;
             dataGridView1.ClearSelection();
         }
         void eklebutonu()
@@ -61,6 +64,7 @@ namespace Ayakkabi_Otomasyon
             if (!string.IsNullOrEmpty(txtad.Text)
                 && !string.IsNullOrEmpty(txtsoyad.Text)
                 && !string.IsNullOrEmpty(txtkullaniciad.Text)
+                && !string.IsNullOrEmpty(cmbYetki.Text)
                 && !string.IsNullOrEmpty(txtsifre.Text)
                 && !string.IsNullOrEmpty(txtsifre1.Text))
             {
@@ -68,7 +72,7 @@ namespace Ayakkabi_Otomasyon
                 {
                     if (txtsifre.Text==txtsifre1.Text)
                     {
-                        string queryadd = "INSERT INTO Kullanici(Ad,Soyad,Kullaniciad,Sifre)VALUES(@Ad,@Soyad,@Kuladi,@Sifre)";
+                        string queryadd = "INSERT INTO Kullanici(Ad,Soyad,Kullaniciad,Sifre,Yetki)VALUES(@Ad,@Soyad,@Kuladi,@Sifre,@Yetki)";
 
                         OleDbCommand cmd = new OleDbCommand(queryadd, con);
                         con.Open();
@@ -76,6 +80,7 @@ namespace Ayakkabi_Otomasyon
                         cmd.Parameters.AddWithValue("@Soyad", txtsoyad.Text);
                         cmd.Parameters.AddWithValue("@Kuladi", txtkullaniciad.Text);
                         cmd.Parameters.AddWithValue("@Sifre", txtsifre.Text);
+                        cmd.Parameters.AddWithValue("@Yetki", cmbYetki.Text);
 
                         cmd.ExecuteNonQuery();
                         con.Close();
@@ -107,6 +112,7 @@ namespace Ayakkabi_Otomasyon
             if (!string.IsNullOrEmpty(txtad.Text)
                 && !string.IsNullOrEmpty(txtsoyad.Text)
                 && !string.IsNullOrEmpty(txtkullaniciad.Text)
+                && !string.IsNullOrEmpty(cmbYetki.Text)
                 && !string.IsNullOrEmpty(txtsifre.Text)
                 && !string.IsNullOrEmpty(txtsifre1.Text))
             {
@@ -118,12 +124,13 @@ namespace Ayakkabi_Otomasyon
                         try
                         {
                             con.Open();
-                            string queryupdate = "UPDATE Kullanici SET AD=@Ad,Soyad=@Soyad,Kullaniciad=@Kuladi,Sifre=@Sifre WHERE ID=@ID";
+                            string queryupdate = "UPDATE Kullanici SET AD=@Ad,Soyad=@Soyad,Kullaniciad=@Kuladi,Sifre=@Sifre,Yetki=@Yetki WHERE ID=@ID";
                             OleDbCommand cmd = new OleDbCommand(queryupdate, con);
                             cmd.Parameters.AddWithValue("@Ad", txtad.Text);
                             cmd.Parameters.AddWithValue("@Soyad", txtsoyad.Text);
                             cmd.Parameters.AddWithValue("@Kuladi", txtkullaniciad.Text);
                             cmd.Parameters.AddWithValue("@Sifre", txtsifre.Text);
+                            cmd.Parameters.AddWithValue("@Yetki", cmbYetki.Text);
                             cmd.Parameters.AddWithValue("@ID", txtid.Text);
                             cmd.ExecuteNonQuery();
                             con.Close();
@@ -154,6 +161,7 @@ namespace Ayakkabi_Otomasyon
             if (!string.IsNullOrEmpty(txtad.Text)
                 && !string.IsNullOrEmpty(txtsoyad.Text)
                 && !string.IsNullOrEmpty(txtkullaniciad.Text)
+                && !string.IsNullOrEmpty(cmbYetki.Text)
                 && !string.IsNullOrEmpty(txtsifre.Text))
             {
                 if (MessageBox.Show("Silmek İstediğinize Emin Misiniz ?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -210,6 +218,7 @@ namespace Ayakkabi_Otomasyon
             txtsoyad.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtkullaniciad.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txtsifre.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            cmbYetki.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -238,6 +247,18 @@ namespace Ayakkabi_Otomasyon
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbYetki_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.Handled = char.IsLetterOrDigit(e.KeyChar))
+            {
+                MessageBox.Show("Değer Girilemez!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
+            else
+            {
+                e.Handled = false;
+            }
         }
     }
 }
