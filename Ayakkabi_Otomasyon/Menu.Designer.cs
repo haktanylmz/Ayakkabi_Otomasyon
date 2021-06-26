@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.button4 = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnMusteriPanel = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -60,7 +61,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblsaat = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,9 +73,20 @@
             this.button4.Location = new System.Drawing.Point(601, 72);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 82);
-            this.button4.TabIndex = 17;
+            this.button4.TabIndex = 2;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "modeller.png");
+            this.ımageList1.Images.SetKeyName(1, "malzeme.png");
+            this.ımageList1.Images.SetKeyName(2, "stok.png");
+            this.ımageList1.Images.SetKeyName(3, "satis.png");
+            this.ımageList1.Images.SetKeyName(4, "kullanici.png");
+            this.ımageList1.Images.SetKeyName(5, "müsteri.png");
             // 
             // btnMusteriPanel
             // 
@@ -86,7 +97,7 @@
             this.btnMusteriPanel.Location = new System.Drawing.Point(601, 261);
             this.btnMusteriPanel.Name = "btnMusteriPanel";
             this.btnMusteriPanel.Size = new System.Drawing.Size(103, 82);
-            this.btnMusteriPanel.TabIndex = 16;
+            this.btnMusteriPanel.TabIndex = 5;
             this.btnMusteriPanel.UseVisualStyleBackColor = false;
             this.btnMusteriPanel.Click += new System.EventHandler(this.btnMusteriPanel_Click);
             // 
@@ -99,7 +110,7 @@
             this.button6.Location = new System.Drawing.Point(81, 261);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 82);
-            this.button6.TabIndex = 15;
+            this.button6.TabIndex = 3;
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -112,7 +123,7 @@
             this.button3.Location = new System.Drawing.Point(341, 261);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 82);
-            this.button3.TabIndex = 14;
+            this.button3.TabIndex = 4;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -125,7 +136,7 @@
             this.button2.Location = new System.Drawing.Point(81, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 82);
-            this.button2.TabIndex = 13;
+            this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -138,7 +149,7 @@
             this.button1.Location = new System.Drawing.Point(341, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 82);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -343,17 +354,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "modeller.png");
-            this.ımageList1.Images.SetKeyName(1, "malzeme.png");
-            this.ımageList1.Images.SetKeyName(2, "stok.png");
-            this.ımageList1.Images.SetKeyName(3, "satis.png");
-            this.ımageList1.Images.SetKeyName(4, "kullanici.png");
-            this.ımageList1.Images.SetKeyName(5, "müsteri.png");
             // 
             // Menu
             // 

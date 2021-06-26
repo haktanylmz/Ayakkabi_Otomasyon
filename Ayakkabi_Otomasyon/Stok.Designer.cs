@@ -74,7 +74,7 @@ namespace Ayakkabi_Otomasyon
             this.btntemizle.Location = new System.Drawing.Point(143, 426);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(81, 33);
-            this.btntemizle.TabIndex = 37;
+            this.btntemizle.TabIndex = 8;
             this.btntemizle.Text = "Temizle";
             this.btntemizle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntemizle.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@ namespace Ayakkabi_Otomasyon
             this.btnsil.Location = new System.Drawing.Point(62, 427);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(81, 32);
-            this.btnsil.TabIndex = 36;
+            this.btnsil.TabIndex = 7;
             this.btnsil.Text = "Sil";
             this.btnsil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsil.UseVisualStyleBackColor = true;
@@ -102,7 +102,7 @@ namespace Ayakkabi_Otomasyon
             this.btnguncelle.Location = new System.Drawing.Point(143, 389);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(81, 32);
-            this.btnguncelle.TabIndex = 35;
+            this.btnguncelle.TabIndex = 6;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguncelle.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@ namespace Ayakkabi_Otomasyon
             this.btnekle.Location = new System.Drawing.Point(62, 389);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(81, 32);
-            this.btnekle.TabIndex = 34;
+            this.btnekle.TabIndex = 5;
             this.btnekle.Text = "Ekle";
             this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnekle.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@ namespace Ayakkabi_Otomasyon
             this.btngeri.Location = new System.Drawing.Point(12, 469);
             this.btngeri.Name = "btngeri";
             this.btngeri.Size = new System.Drawing.Size(30, 30);
-            this.btngeri.TabIndex = 38;
+            this.btngeri.TabIndex = 9;
             this.btngeri.UseVisualStyleBackColor = true;
             this.btngeri.Click += new System.EventHandler(this.btngeri_Click);
             // 
@@ -149,21 +149,21 @@ namespace Ayakkabi_Otomasyon
             this.txtAd.Location = new System.Drawing.Point(108, 222);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(100, 20);
-            this.txtAd.TabIndex = 40;
+            this.txtAd.TabIndex = 2;
             // 
             // txtAdet
             // 
             this.txtAdet.Location = new System.Drawing.Point(108, 267);
             this.txtAdet.Name = "txtAdet";
             this.txtAdet.Size = new System.Drawing.Size(100, 20);
-            this.txtAdet.TabIndex = 40;
+            this.txtAdet.TabIndex = 3;
             // 
             // txtDesi
             // 
             this.txtDesi.Location = new System.Drawing.Point(108, 312);
             this.txtDesi.Name = "txtDesi";
             this.txtDesi.Size = new System.Drawing.Size(100, 20);
-            this.txtDesi.TabIndex = 40;
+            this.txtDesi.TabIndex = 4;
             this.txtDesi.Visible = false;
             // 
             // lblID
@@ -183,7 +183,7 @@ namespace Ayakkabi_Otomasyon
             this.txtID.Location = new System.Drawing.Point(108, 132);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
-            this.txtID.TabIndex = 40;
+            this.txtID.TabIndex = 0;
             this.txtID.Visible = false;
             // 
             // lblTip
@@ -247,7 +247,7 @@ namespace Ayakkabi_Otomasyon
             this.cmbTip.Location = new System.Drawing.Point(108, 177);
             this.cmbTip.Name = "cmbTip";
             this.cmbTip.Size = new System.Drawing.Size(100, 21);
-            this.cmbTip.TabIndex = 45;
+            this.cmbTip.TabIndex = 1;
             this.cmbTip.DropDown += new System.EventHandler(this.cmbTip_DropDown);
             this.cmbTip.SelectedIndexChanged += new System.EventHandler(this.cmbTip_SelectedIndexChanged);
             this.cmbTip.TextChanged += new System.EventHandler(this.cmbTip_TextChanged);

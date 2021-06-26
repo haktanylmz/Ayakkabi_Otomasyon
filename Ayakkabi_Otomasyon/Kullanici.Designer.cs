@@ -68,7 +68,7 @@
             this.btntemizle.Location = new System.Drawing.Point(145, 430);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(81, 33);
-            this.btntemizle.TabIndex = 8;
+            this.btntemizle.TabIndex = 9;
             this.btntemizle.Text = "Temizle";
             this.btntemizle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntemizle.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             this.btnsil.Location = new System.Drawing.Point(64, 431);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(81, 32);
-            this.btnsil.TabIndex = 7;
+            this.btnsil.TabIndex = 8;
             this.btnsil.Text = "Sil";
             this.btnsil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsil.UseVisualStyleBackColor = true;
@@ -105,7 +105,7 @@
             this.btnguncelle.Location = new System.Drawing.Point(145, 393);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(81, 32);
-            this.btnguncelle.TabIndex = 6;
+            this.btnguncelle.TabIndex = 7;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguncelle.UseVisualStyleBackColor = true;
@@ -176,7 +176,7 @@
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.PasswordChar = '*';
             this.txtsifre.Size = new System.Drawing.Size(100, 20);
-            this.txtsifre.TabIndex = 3;
+            this.txtsifre.TabIndex = 4;
             // 
             // lblsifre
             // 
@@ -195,7 +195,7 @@
             this.txtsifre1.Name = "txtsifre1";
             this.txtsifre1.PasswordChar = '*';
             this.txtsifre1.Size = new System.Drawing.Size(100, 20);
-            this.txtsifre1.TabIndex = 4;
+            this.txtsifre1.TabIndex = 5;
             // 
             // lblsifre2
             // 
@@ -241,7 +241,7 @@
             this.btngeri.Location = new System.Drawing.Point(20, 469);
             this.btngeri.Name = "btngeri";
             this.btngeri.Size = new System.Drawing.Size(30, 30);
-            this.btngeri.TabIndex = 22;
+            this.btngeri.TabIndex = 10;
             this.btngeri.UseVisualStyleBackColor = true;
             this.btngeri.Click += new System.EventHandler(this.btngeri_Click);
             // 
@@ -254,7 +254,7 @@
             this.btnekle.Location = new System.Drawing.Point(64, 393);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(81, 32);
-            this.btnekle.TabIndex = 5;
+            this.btnekle.TabIndex = 6;
             this.btnekle.Text = "Ekle";
             this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnekle.UseVisualStyleBackColor = true;
@@ -311,7 +311,7 @@
             this.cmbYetki.Location = new System.Drawing.Point(99, 250);
             this.cmbYetki.Name = "cmbYetki";
             this.cmbYetki.Size = new System.Drawing.Size(100, 21);
-            this.cmbYetki.TabIndex = 67;
+            this.cmbYetki.TabIndex = 3;
             this.cmbYetki.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbYetki_KeyPress);
             // 
             // lblYetki

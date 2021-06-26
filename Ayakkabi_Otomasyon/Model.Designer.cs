@@ -95,7 +95,7 @@
             this.cmbasorti.Location = new System.Drawing.Point(97, 235);
             this.cmbasorti.Name = "cmbasorti";
             this.cmbasorti.Size = new System.Drawing.Size(114, 21);
-            this.cmbasorti.TabIndex = 5;
+            this.cmbasorti.TabIndex = 2;
             this.cmbasorti.DropDown += new System.EventHandler(this.cmbasorti_DropDown);
             // 
             // txturunsayisi
@@ -103,14 +103,14 @@
             this.txturunsayisi.Location = new System.Drawing.Point(97, 304);
             this.txturunsayisi.Name = "txturunsayisi";
             this.txturunsayisi.Size = new System.Drawing.Size(114, 20);
-            this.txturunsayisi.TabIndex = 6;
+            this.txturunsayisi.TabIndex = 4;
             // 
             // txturunkod
             // 
             this.txturunkod.Location = new System.Drawing.Point(97, 270);
             this.txturunkod.Name = "txturunkod";
             this.txturunkod.Size = new System.Drawing.Size(114, 20);
-            this.txturunkod.TabIndex = 7;
+            this.txturunkod.TabIndex = 3;
             // 
             // lblurunkod
             // 
@@ -132,7 +132,7 @@
             this.btngeri.Location = new System.Drawing.Point(12, 469);
             this.btngeri.Name = "btngeri";
             this.btngeri.Size = new System.Drawing.Size(30, 30);
-            this.btngeri.TabIndex = 18;
+            this.btngeri.TabIndex = 10;
             this.btngeri.UseVisualStyleBackColor = true;
             this.btngeri.Click += new System.EventHandler(this.btngeri_Click);
             // 
@@ -143,7 +143,7 @@
             this.btnresimkapat.Location = new System.Drawing.Point(186, 195);
             this.btnresimkapat.Name = "btnresimkapat";
             this.btnresimkapat.Size = new System.Drawing.Size(25, 23);
-            this.btnresimkapat.TabIndex = 14;
+            this.btnresimkapat.TabIndex = 1;
             this.btnresimkapat.UseVisualStyleBackColor = true;
             this.btnresimkapat.Click += new System.EventHandler(this.btnresimkapat_Click);
             // 
@@ -154,7 +154,7 @@
             this.btnresimekle.Location = new System.Drawing.Point(97, 195);
             this.btnresimekle.Name = "btnresimekle";
             this.btnresimekle.Size = new System.Drawing.Size(83, 23);
-            this.btnresimekle.TabIndex = 13;
+            this.btnresimekle.TabIndex = 0;
             this.btnresimekle.Text = "resim ekle";
             this.btnresimekle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnresimekle.UseVisualStyleBackColor = true;
@@ -205,7 +205,7 @@
             this.btntemizle.Location = new System.Drawing.Point(135, 422);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(81, 33);
-            this.btntemizle.TabIndex = 29;
+            this.btntemizle.TabIndex = 9;
             this.btntemizle.Text = "Temizle";
             this.btntemizle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntemizle.UseVisualStyleBackColor = true;
@@ -228,7 +228,7 @@
             this.btnsil.Location = new System.Drawing.Point(54, 423);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(81, 32);
-            this.btnsil.TabIndex = 28;
+            this.btnsil.TabIndex = 8;
             this.btnsil.Text = "Sil";
             this.btnsil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsil.UseVisualStyleBackColor = true;
@@ -242,7 +242,7 @@
             this.btnguncelle.Location = new System.Drawing.Point(135, 385);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(81, 32);
-            this.btnguncelle.TabIndex = 27;
+            this.btnguncelle.TabIndex = 7;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguncelle.UseVisualStyleBackColor = true;
@@ -257,7 +257,7 @@
             this.btnekle.Location = new System.Drawing.Point(54, 385);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(81, 32);
-            this.btnekle.TabIndex = 26;
+            this.btnekle.TabIndex = 6;
             this.btnekle.Text = "Ekle";
             this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnekle.UseVisualStyleBackColor = true;
@@ -278,7 +278,7 @@
             this.txtFiyat.Location = new System.Drawing.Point(97, 338);
             this.txtFiyat.Name = "txtFiyat";
             this.txtFiyat.Size = new System.Drawing.Size(114, 20);
-            this.txtFiyat.TabIndex = 38;
+            this.txtFiyat.TabIndex = 5;
             // 
             // lblFiyat
             // 
@@ -294,7 +294,7 @@
             this.txtID.Location = new System.Drawing.Point(97, 46);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(114, 20);
-            this.txtID.TabIndex = 40;
+            this.txtID.TabIndex = 0;
             this.txtID.Visible = false;
             // 
             // lblID

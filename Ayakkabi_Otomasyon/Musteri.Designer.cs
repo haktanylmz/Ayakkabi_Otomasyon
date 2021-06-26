@@ -236,7 +236,7 @@
             this.btngeri.Location = new System.Drawing.Point(12, 469);
             this.btngeri.Name = "btngeri";
             this.btngeri.Size = new System.Drawing.Size(30, 30);
-            this.btngeri.TabIndex = 22;
+            this.btngeri.TabIndex = 10;
             this.btngeri.UseVisualStyleBackColor = true;
             this.btngeri.Click += new System.EventHandler(this.btngeri_Click);
             // 

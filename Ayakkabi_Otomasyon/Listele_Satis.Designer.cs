@@ -48,7 +48,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 47);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(780, 417);
-            this.dataGridView1.TabIndex = 41;
+            this.dataGridView1.TabIndex = 0;
             // 
             // label2
             // 
@@ -75,7 +75,7 @@
             this.btnGeri.Location = new System.Drawing.Point(12, 469);
             this.btnGeri.Name = "btnGeri";
             this.btnGeri.Size = new System.Drawing.Size(30, 30);
-            this.btnGeri.TabIndex = 42;
+            this.btnGeri.TabIndex = 1;
             this.btnGeri.UseVisualStyleBackColor = true;
             this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 

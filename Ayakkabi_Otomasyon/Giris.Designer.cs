@@ -49,7 +49,7 @@
             this.btnGiris.Location = new System.Drawing.Point(110, 153);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(130, 32);
-            this.btnGiris.TabIndex = 4;
+            this.btnGiris.TabIndex = 3;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = false;
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);

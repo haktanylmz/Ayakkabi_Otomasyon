@@ -121,7 +121,7 @@
             this.txtAdet.Location = new System.Drawing.Point(89, 280);
             this.txtAdet.Name = "txtAdet";
             this.txtAdet.Size = new System.Drawing.Size(100, 20);
-            this.txtAdet.TabIndex = 41;
+            this.txtAdet.TabIndex = 7;
             this.txtAdet.TextChanged += new System.EventHandler(this.txtAdet_TextChanged);
             // 
             // lblAdet
@@ -138,7 +138,7 @@
             this.txtFiyat.Location = new System.Drawing.Point(89, 256);
             this.txtFiyat.Name = "txtFiyat";
             this.txtFiyat.Size = new System.Drawing.Size(100, 20);
-            this.txtFiyat.TabIndex = 41;
+            this.txtFiyat.TabIndex = 6;
             // 
             // lblFiyat
             // 
@@ -154,7 +154,7 @@
             this.btnTemizle.Location = new System.Drawing.Point(128, 392);
             this.btnTemizle.Name = "btnTemizle";
             this.btnTemizle.Size = new System.Drawing.Size(73, 36);
-            this.btnTemizle.TabIndex = 44;
+            this.btnTemizle.TabIndex = 13;
             this.btnTemizle.Text = "Temizle";
             this.btnTemizle.UseVisualStyleBackColor = true;
             this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
@@ -175,7 +175,7 @@
             this.btnGeri.Location = new System.Drawing.Point(12, 469);
             this.btnGeri.Name = "btnGeri";
             this.btnGeri.Size = new System.Drawing.Size(30, 30);
-            this.btnGeri.TabIndex = 7;
+            this.btnGeri.TabIndex = 18;
             this.btnGeri.UseVisualStyleBackColor = true;
             this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
@@ -193,7 +193,7 @@
             this.txtAsorti.Location = new System.Drawing.Point(89, 232);
             this.txtAsorti.Name = "txtAsorti";
             this.txtAsorti.Size = new System.Drawing.Size(100, 20);
-            this.txtAsorti.TabIndex = 41;
+            this.txtAsorti.TabIndex = 5;
             // 
             // lblAsorti
             // 
@@ -209,7 +209,7 @@
             this.btnSepeteEkle.Location = new System.Drawing.Point(49, 392);
             this.btnSepeteEkle.Name = "btnSepeteEkle";
             this.btnSepeteEkle.Size = new System.Drawing.Size(73, 36);
-            this.btnSepeteEkle.TabIndex = 44;
+            this.btnSepeteEkle.TabIndex = 12;
             this.btnSepeteEkle.Text = "Sepete Ekle";
             this.btnSepeteEkle.UseVisualStyleBackColor = true;
             this.btnSepeteEkle.Click += new System.EventHandler(this.btnSepeteEkle_Click);
@@ -222,7 +222,7 @@
             this.txtTc.MaxLength = 11;
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(100, 20);
-            this.txtTc.TabIndex = 41;
+            this.txtTc.TabIndex = 0;
             this.txtTc.TextChanged += new System.EventHandler(this.txtTc_TextChanged);
             // 
             // txtAd
@@ -230,14 +230,14 @@
             this.txtAd.Location = new System.Drawing.Point(89, 40);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(100, 20);
-            this.txtAd.TabIndex = 41;
+            this.txtAd.TabIndex = 1;
             // 
             // txtTelefon
             // 
             this.txtTelefon.Location = new System.Drawing.Point(89, 90);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefon.TabIndex = 41;
+            this.txtTelefon.TabIndex = 3;
             // 
             // label6
             // 
@@ -271,7 +271,7 @@
             this.txtToplamFiyat.Location = new System.Drawing.Point(89, 332);
             this.txtToplamFiyat.Name = "txtToplamFiyat";
             this.txtToplamFiyat.Size = new System.Drawing.Size(100, 20);
-            this.txtToplamFiyat.TabIndex = 41;
+            this.txtToplamFiyat.TabIndex = 10;
             // 
             // lblToplamFiyat
             // 
@@ -287,7 +287,7 @@
             this.btnSil.Location = new System.Drawing.Point(49, 434);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(73, 36);
-            this.btnSil.TabIndex = 46;
+            this.btnSil.TabIndex = 14;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
@@ -297,7 +297,7 @@
             this.btnSatisIptal.Location = new System.Drawing.Point(128, 434);
             this.btnSatisIptal.Name = "btnSatisIptal";
             this.btnSatisIptal.Size = new System.Drawing.Size(73, 36);
-            this.btnSatisIptal.TabIndex = 46;
+            this.btnSatisIptal.TabIndex = 15;
             this.btnSatisIptal.Text = "Satış İptal";
             this.btnSatisIptal.UseVisualStyleBackColor = true;
             this.btnSatisIptal.Click += new System.EventHandler(this.btnSatisIptal_Click);
@@ -307,7 +307,7 @@
             this.btnSatisYap.Location = new System.Drawing.Point(248, 481);
             this.btnSatisYap.Name = "btnSatisYap";
             this.btnSatisYap.Size = new System.Drawing.Size(75, 23);
-            this.btnSatisYap.TabIndex = 47;
+            this.btnSatisYap.TabIndex = 16;
             this.btnSatisYap.Text = "Satış Yap";
             this.btnSatisYap.UseVisualStyleBackColor = true;
             this.btnSatisYap.Click += new System.EventHandler(this.btnSatisYap_Click);
@@ -335,7 +335,7 @@
             this.btnSatisListele.Location = new System.Drawing.Point(344, 481);
             this.btnSatisListele.Name = "btnSatisListele";
             this.btnSatisListele.Size = new System.Drawing.Size(75, 23);
-            this.btnSatisListele.TabIndex = 50;
+            this.btnSatisListele.TabIndex = 17;
             this.btnSatisListele.Text = "Satış Listele";
             this.btnSatisListele.UseVisualStyleBackColor = true;
             this.btnSatisListele.Click += new System.EventHandler(this.btnSatisListele_Click);
@@ -345,7 +345,7 @@
             this.txtSoyad.Location = new System.Drawing.Point(89, 65);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(100, 20);
-            this.txtSoyad.TabIndex = 41;
+            this.txtSoyad.TabIndex = 2;
             // 
             // lblSoyad
             // 
@@ -364,7 +364,7 @@
             this.txtID.MaxLength = 11;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
-            this.txtID.TabIndex = 51;
+            this.txtID.TabIndex = 11;
             this.txtID.Visible = false;
             // 
             // label1
@@ -392,7 +392,7 @@
             this.cmbkdv.Location = new System.Drawing.Point(89, 305);
             this.cmbkdv.Name = "cmbkdv";
             this.cmbkdv.Size = new System.Drawing.Size(100, 21);
-            this.cmbkdv.TabIndex = 54;
+            this.cmbkdv.TabIndex = 8;
             this.cmbkdv.DropDown += new System.EventHandler(this.cmbkdv_DropDown);
             this.cmbkdv.SelectedIndexChanged += new System.EventHandler(this.cmbkdv_SelectedIndexChanged);
             this.cmbkdv.DropDownClosed += new System.EventHandler(this.cmbkdv_DropDownClosed);
@@ -422,7 +422,7 @@
             this.txtOzeloran.Location = new System.Drawing.Point(208, 306);
             this.txtOzeloran.Name = "txtOzeloran";
             this.txtOzeloran.Size = new System.Drawing.Size(34, 20);
-            this.txtOzeloran.TabIndex = 57;
+            this.txtOzeloran.TabIndex = 9;
             this.txtOzeloran.Visible = false;
             this.txtOzeloran.TextChanged += new System.EventHandler(this.txtOzeloran_TextChanged);
             this.txtOzeloran.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOzeloran_KeyPress);
@@ -442,7 +442,7 @@
             this.cmbUrunKod.Location = new System.Drawing.Point(89, 207);
             this.cmbUrunKod.Name = "cmbUrunKod";
             this.cmbUrunKod.Size = new System.Drawing.Size(100, 21);
-            this.cmbUrunKod.TabIndex = 59;
+            this.cmbUrunKod.TabIndex = 4;
             this.cmbUrunKod.SelectedIndexChanged += new System.EventHandler(this.cmbUrunKod_SelectedIndexChanged);
             this.cmbUrunKod.TextChanged += new System.EventHandler(this.cmbUrunKod_TextChanged);
             // 

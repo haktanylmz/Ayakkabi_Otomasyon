@@ -71,7 +71,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(263, 46);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(529, 426);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 10;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // lblfotograf
@@ -93,7 +93,7 @@
             this.cmbcilt.Location = new System.Drawing.Point(104, 266);
             this.cmbcilt.Name = "cmbcilt";
             this.cmbcilt.Size = new System.Drawing.Size(114, 21);
-            this.cmbcilt.TabIndex = 8;
+            this.cmbcilt.TabIndex = 3;
             this.cmbcilt.DropDown += new System.EventHandler(this.cmbcilt_DropDown);
             // 
             // lblcilt
@@ -110,7 +110,7 @@
             this.txttaban.Location = new System.Drawing.Point(104, 305);
             this.txttaban.Name = "txttaban";
             this.txttaban.Size = new System.Drawing.Size(114, 20);
-            this.txttaban.TabIndex = 10;
+            this.txttaban.TabIndex = 4;
             // 
             // lbltaban
             // 
@@ -126,7 +126,7 @@
             this.txtrenk.Location = new System.Drawing.Point(104, 343);
             this.txtrenk.Name = "txtrenk";
             this.txtrenk.Size = new System.Drawing.Size(114, 20);
-            this.txtrenk.TabIndex = 12;
+            this.txtrenk.TabIndex = 5;
             // 
             // lblrenk
             // 
@@ -142,7 +142,7 @@
             this.txtid.Location = new System.Drawing.Point(104, 108);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(114, 20);
-            this.txtid.TabIndex = 15;
+            this.txtid.TabIndex = 0;
             this.txtid.Visible = false;
             // 
             // lblid
@@ -228,7 +228,7 @@
             this.btntemizle.Location = new System.Drawing.Point(143, 426);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(81, 33);
-            this.btntemizle.TabIndex = 33;
+            this.btntemizle.TabIndex = 9;
             this.btntemizle.Text = "Temizle";
             this.btntemizle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntemizle.UseVisualStyleBackColor = true;
@@ -242,7 +242,7 @@
             this.btnsil.Location = new System.Drawing.Point(62, 427);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(81, 32);
-            this.btnsil.TabIndex = 32;
+            this.btnsil.TabIndex = 8;
             this.btnsil.Text = "Sil";
             this.btnsil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsil.UseVisualStyleBackColor = true;
@@ -255,7 +255,7 @@
             this.btngeri.Location = new System.Drawing.Point(12, 469);
             this.btngeri.Name = "btngeri";
             this.btngeri.Size = new System.Drawing.Size(30, 30);
-            this.btngeri.TabIndex = 17;
+            this.btngeri.TabIndex = 11;
             this.btngeri.UseVisualStyleBackColor = true;
             this.btngeri.Click += new System.EventHandler(this.btngeri_Click);
             // 
@@ -267,7 +267,7 @@
             this.btnguncelle.Location = new System.Drawing.Point(143, 389);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(81, 32);
-            this.btnguncelle.TabIndex = 31;
+            this.btnguncelle.TabIndex = 7;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguncelle.UseVisualStyleBackColor = true;
@@ -282,7 +282,7 @@
             this.btnekle.Location = new System.Drawing.Point(62, 389);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(81, 32);
-            this.btnekle.TabIndex = 30;
+            this.btnekle.TabIndex = 6;
             this.btnekle.Text = "Ekle";
             this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnekle.UseVisualStyleBackColor = true;
@@ -295,7 +295,7 @@
             this.btnresimkapat.Location = new System.Drawing.Point(193, 225);
             this.btnresimkapat.Name = "btnresimkapat";
             this.btnresimkapat.Size = new System.Drawing.Size(25, 23);
-            this.btnresimkapat.TabIndex = 7;
+            this.btnresimkapat.TabIndex = 2;
             this.btnresimkapat.UseVisualStyleBackColor = true;
             this.btnresimkapat.Click += new System.EventHandler(this.btnresimkapat_Click);
             // 
@@ -306,7 +306,7 @@
             this.btnresimekle.Location = new System.Drawing.Point(104, 225);
             this.btnresimekle.Name = "btnresimekle";
             this.btnresimekle.Size = new System.Drawing.Size(83, 23);
-            this.btnresimekle.TabIndex = 6;
+            this.btnresimekle.TabIndex = 1;
             this.btnresimekle.Text = "resim ekle";
             this.btnresimekle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnresimekle.UseVisualStyleBackColor = true;
