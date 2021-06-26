@@ -51,8 +51,8 @@ namespace Ayakkabi_Otomasyon
             lblkullanici.Text = Giris.username;
             lblkdv.Text = "";
             LoadGridView();
-            hesapla();
             tcgetir();
+            hesapla();
             urunkodgetir();
             timer1.Start();
         }
@@ -315,13 +315,27 @@ namespace Ayakkabi_Otomasyon
             {
                 con.Open();
                 double sayi = 0;
+                string bos="";
                 if (sayi == 0)
                 {
-                    
-                    OleDbCommand cmd = new OleDbCommand("select sum(Kdv_Toplam_Fiyat)from Sepet", con);
-                    sayi = Convert.ToDouble(cmd.ExecuteScalar());
-                    sayi = Math.Round(sayi, 3);
-                    txtGenelToplam.Text = Convert.ToString(sayi) + " ₺";
+                    OleDbCommand cmd1 = new OleDbCommand("select Kdv_Toplam_Fiyat from Sepet", con);
+                    OleDbDataReader read = cmd1.ExecuteReader();
+                    while (read.Read())
+                    {
+                        bos = Convert.ToString(read["Kdv_Toplam_Fiyat"]);
+                        if (bos =="")
+                        {
+
+                        }
+                        else
+                        {
+                            OleDbCommand cmd = new OleDbCommand("select sum(Kdv_Toplam_Fiyat)from Sepet", con);
+                            sayi = Convert.ToDouble(cmd.ExecuteScalar());
+                            sayi = Math.Round(sayi, 3);
+                            txtGenelToplam.Text = Convert.ToString(sayi) + " ₺";
+                        }
+                    }
+                   
                 }
                 
 
@@ -329,7 +343,7 @@ namespace Ayakkabi_Otomasyon
             }
             catch (Exception ex)
             {
-
+                con.Close();
                 MessageBox.Show("Genel Toplam Hesabında Hata : "+ex);
             }
         }
