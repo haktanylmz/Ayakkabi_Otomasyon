@@ -25,6 +25,7 @@ namespace Ayakkabi_Otomasyon
             LoadGridView();
             lblkullanici.Text = "";
             lblkullanici.Text = Giris.username;
+            dataGridView1.Refresh();
             timer1.Start();
         }
 
@@ -65,6 +66,7 @@ namespace Ayakkabi_Otomasyon
         void ClearTextBoxes()
         {
             dataGridView1.ClearSelection();
+            dataGridView1.Refresh();
             pictureBox1.ImageLocation = null;
             cmbasorti.Text = "";
             txturunkod.Text = "";

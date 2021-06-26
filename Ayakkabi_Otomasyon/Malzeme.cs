@@ -24,6 +24,7 @@ namespace Ayakkabi_Otomasyon
 
         private void Malzeme_Load(object sender, EventArgs e)
         {
+            dataGridView1.Refresh();
             LoadGridView();
             lblkullanici.Text = "";
             lblkullanici.Text = Giris.username;
@@ -66,6 +67,7 @@ namespace Ayakkabi_Otomasyon
             txttaban.Text = "";
             txtrenk.Text = "";
             dataGridView1.ClearSelection();
+            dataGridView1.Refresh();
         }
         void eklebutonu()
         {
